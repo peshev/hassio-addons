@@ -9,7 +9,7 @@ def install_dependencies():
     """Installs dependencies"""
     import importlib
     import subprocess
-    modules = ["os", "json", "requests", "random", "playsound"]
+    modules = ["os", "json", "requests", "random", "playsound", "vext", "vext.gi"]
     for module in modules:
         try:
             importlib.import_module(module)
@@ -25,7 +25,7 @@ import os
 import json
 import requests
 from random import randint
-from playsound import playsound
+from playsound import playsound as pl
 
 
 def setup():
@@ -64,7 +64,7 @@ def download(file_url: str):
 def play(filename: str):
     """Play music from file"""
     try:
-        playsound(os.path.join(cache_dir, filename))
+        pl(os.path.join(cache_dir, filename))
     except Exception as e:
         print("Unknown Error! Details: ", e)
 
