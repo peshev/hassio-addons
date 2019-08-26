@@ -1,0 +1,14 @@
+{
+  "name": "Local Audio Player",
+  "version": "2.0",
+  "slug": "local_audio_player",
+  "description": "Play audio files.",
+  "startup": "application",
+  "boot": "auto",
+  "audio": true,
+  "options": {"url":  ""},
+  "schema": {
+    "url": "url"
+  },
+  "host_network": true
+}
