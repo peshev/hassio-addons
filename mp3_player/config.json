@@ -3,6 +3,7 @@
   "version": "2.0",
   "slug": "mp3_player",
   "description": "Play mp3 file from url.",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
   "audio": true,
