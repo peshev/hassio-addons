@@ -1,8 +1,8 @@
 {
-  "name": "Local Audio Player",
+  "name": "MP3 Player",
   "version": "2.0",
-  "slug": "local_audio_player",
-  "description": "Play audio files.",
+  "slug": "mp3_player",
+  "description": "Play mp3 file from url.",
   "startup": "application",
   "boot": "auto",
   "audio": true,
