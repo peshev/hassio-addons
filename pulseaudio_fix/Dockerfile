@@ -49,4 +49,4 @@ LABEL \
 # Copy data for add-on
 COPY data/main.py /
 
-CMD [ "python3 /main.py" ]
+CMD [ "pactl", "load-module", "module-suspend-on-idle" ]
