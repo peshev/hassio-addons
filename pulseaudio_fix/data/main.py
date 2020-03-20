@@ -5,7 +5,9 @@ import subprocess
 
 def main():
     # pactl load-module module-suspend-on-idle
-    subprocess.call(['pactl', 'load-module', "module-suspend-on-idle"])
+    print("-----------Start command")
+    process = subprocess.call(['pactl', 'load-module', "module-suspend-on-idle"])
+    print("-----------Work Finished; Exit Code: ", process)
 
 
 if __name__ == "__main__":
