@@ -4,6 +4,9 @@ ENV LANG C.UTF-8
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
+# Add env
+ENV TERM="xterm-256color"
+
 # Copy Python requirements file
 COPY requirements.txt /tmp/
 
@@ -14,6 +17,7 @@ RUN \
         alsa-plugins-pulse=1.2.1-r0 \
         alsa-utils=1.2.1-r0 \
         pulseaudio-utils=13.0-r2 \
+        python3=3.8.2-r0 \
     && pip3 install \
         --no-cache-dir \
         --find-links "https://wheels.home-assistant.io/alpine-3.11/${BUILD_ARCH}/" \
