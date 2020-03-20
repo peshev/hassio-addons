@@ -47,8 +47,6 @@ LABEL \
     org.label-schema.vendor="Anodev"
 
 # Copy data for add-on
-COPY data/run.sh /
 COPY data/main.py /
-RUN chmod a+x /run.sh
 
-CMD [ "/run.sh" ]
+CMD [ "python3 /main.py" ]
