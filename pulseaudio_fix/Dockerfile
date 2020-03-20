@@ -20,12 +20,12 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="Alsa & PulseAudio Fix" \
-    io.hass.description="This add-in eliminates the problem of 'Device or resource busy' on computers with an external ALSA and PULSEAUDIO caused by the docker container 'hassio_audio'" \
+    io.hass.description="This add-on eliminates the problem of 'Device or resource busy' on computers with an external ALSA and PULSEAUDIO caused by the docker container 'hassio_audio'" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Anodev <https://github.com/OPHoperHPO>" \
-    org.label-schema.description="This add-in eliminates the problem of 'Device or resource busy' on computers with an external ALSA and PULSEAUDIO caused by the docker container 'hassio_audio'" \
+    org.label-schema.description="This add-on eliminates the problem of 'Device or resource busy' on computers with an external ALSA and PULSEAUDIO caused by the docker container 'hassio_audio'" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Alsa & PulseAudio Fix" \
     org.label-schema.schema-version="1.0" \
