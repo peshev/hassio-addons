@@ -1,6 +1,6 @@
 {
   "name": "Alsa & Pulseaudio Fix",
-  "version": "2.4",
+  "version": "2.5",
   "slug": "pulseaudio_fix",
   "description": "Fixes alsa device busy issue on desktop systems with external alsa & pulse server",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -9,5 +9,36 @@
   "audio": true,
   "options": {},
   "schema": {},
-  "host_network": true
+  "host_network": true,
+  "hassio_api": true,
+  "hassio_role": "manager",
+  "services": [
+    "mysql:want",
+    "mqtt:want"
+  ],
+  "homeassistant_api": true,
+  "auto_uart": true,
+  "gpio": true,
+  "apparmor": false,
+  "host_dbus": true,
+  "stdin": true,
+  "docker_api": true,
+  "full_access": true,
+  "privileged": [
+    "NET_ADMIN",
+    "SYS_ADMIN",
+    "SYS_RAWIO",
+    "SYS_TIME",
+    "SYS_NICE"
+  ],
+  "devices": [
+    "/dev/mem:/dev/mem:rwm"
+  ],
+  "map": [
+    "config:rw",
+    "ssl:rw",
+    "addons:rw",
+    "share:rw",
+    "backup:rw"
+  ]
 }
