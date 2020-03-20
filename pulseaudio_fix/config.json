@@ -8,5 +8,5 @@
   "boot": "auto",
   "audio": true,
   "options": {},
-  "scheme": {}
+  "schema": {}
 }
