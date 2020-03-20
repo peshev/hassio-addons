@@ -19,20 +19,20 @@ ARG BUILD_VERSION
 
 # Labels
 LABEL \
-    io.hass.name="Alsa & Pulseaudio Fix" \
-    io.hass.description="Fixes alsa device busy issue on desktop systems with external alsa & pulse server" \
+    io.hass.name="Alsa & PulseAudio Fix" \
+    io.hass.description="This add-in eliminates the problem of 'Device or resource busy' on computers with an external ALSA and PULSEAUDIO caused by the docker container 'hassio_audio'" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Anodev <https://github.com/OPHoperHPO>" \
-    org.label-schema.description="Fixes alsa device busy issue on desktop systems with external alsa & pulse server" \
+    org.label-schema.description="This add-in eliminates the problem of 'Device or resource busy' on computers with an external ALSA and PULSEAUDIO caused by the docker container 'hassio_audio'" \
     org.label-schema.build-date=${BUILD_DATE} \
-    org.label-schema.name="Alsa & Pulseaudio Fix" \
+    org.label-schema.name="Alsa & PulseAudio Fix" \
     org.label-schema.schema-version="1.0" \
-    org.label-schema.url="https://github.com/OPHoperHPO" \
-    org.label-schema.usage="https://github.com/OPHoperHPO" \
+    org.label-schema.url="https://github.com/OPHoperHPO/hassio-addons/tree/master/pulseaudio_fix" \
+    org.label-schema.usage="https://github.com/OPHoperHPO/hassio-addons/tree/master/pulseaudio_fix" \
     org.label-schema.vcs-ref=${BUILD_REF} \
-    org.label-schema.vcs-url="https://github.com/OPHoperHPO" \
-    org.label-schema.vendor="Anodev"
+    org.label-schema.vcs-url="https://github.com/OPHoperHPO/hassio-addons/tree/master/pulseaudio_fix" \
+    org.label-schema.vendor="Anodev <https://github.com/OPHoperHPO>"
 
 CMD [ "pactl", "load-module", "module-suspend-on-idle" ]
