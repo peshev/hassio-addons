@@ -8,9 +8,9 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache \
-        alsa-plugins-pulse=1.2.1-r0 \
-        alsa-utils=1.2.1-r0 \
-        pulseaudio-utils=13.0-r2
+        alsa-plugins-pulse \
+        alsa-utils \
+        pulseaudio-utils
 
 # Build arguments
 ARG BUILD_DATE
