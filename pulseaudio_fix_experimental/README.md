@@ -23,8 +23,8 @@ This is a **very dirty temporary hack**, but it **works**.
 2. Run it.
 3. Check the add-on’s logs to make sure that
 the problem was fixed by successfully loading the module.
-> If you ever lose sound again, just launch the add-on manually, or configure the add-on to automatically restart using `automation` in the Home Assistant.
-> When you restart the add-on, it reinitializes the module.
+> If you ever lose sound again, just launch the add-on manually, or configure the add-on to automatically restart using `automation` in the Home Assistant. \
+> When you restart the add-on, it reinitializes the module. \
 > After each reboot of the container with hass.io, this add-on will start automatically.
 
 ## 🧷 Urls
