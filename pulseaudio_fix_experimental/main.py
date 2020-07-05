@@ -1,8 +1,4 @@
-import logging
 import subprocess
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
 
 def is_loaded():
@@ -34,16 +30,14 @@ def main():
     if is_loaded():
         err = unload_module()
         if len(err) > 0:
-            logger.error("Error unloading module `module-suspend-on-idle`!"
-                         "Output pactl: {}".format(err))
-            exit(1)
+            raise Exception("Error unloading module `module-suspend-on-idle`!"
+                            "Output pactl: {}".format(err))
     err = load_module()
     if len(err) > 0:
-        logger.error("Error loading module `module-suspend-on-idle`!"
-                     "Output pactl: {}".format(err))
-        exit(1)
+        Exception("Error loading module `module-suspend-on-idle`!"
+                  "Output pactl: {}".format(err))
     else:
-        logger.info("Module `module-suspend-on-idle` loaded successfully!")
+        print("Module `module-suspend-on-idle` loaded successfully!")
 
 
 if __name__ == '__main__':
