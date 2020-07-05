@@ -1,7 +1,7 @@
 import subprocess
 
 def get_config():
-    process = subprocess.Popen(['bashio::config'], stdout=subprocess.PIPE)
+    process = subprocess.Popen(['bashio', 'config'], stdout=subprocess.PIPE)
     stdout = process.communicate()[0]
     return dict(stdout)
 
@@ -13,3 +13,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    while True:
+        pass
