@@ -3,6 +3,12 @@
 ## 📄 Description
 This add-on eliminates the [problem](https://github.com/home-assistant/audio/issues/12) of ``Device or resource busy`` on computers with an **external ALSA and PULSEAUDIO** caused by the docker container ```hassio_audio```.
 
+### 💵 Support me:
+You can thank me for developing this project, provide financial support for the development of new projects and buy me a small cup of coffee.☕ \
+  Just support me on these platforms:    \
+  ⭐[**Boosty**⭐](https://boosty.to/anodev)   \
+  ⭐[**DonationAlerts**⭐](https://www.donationalerts.com/r/anodev_development)
+
 ## 🔍 Warning!
 This is a **very dirty temporary hack**, but it **works**.
 
@@ -21,12 +27,6 @@ the problem was fixed by successfully loading the module.
 > When you restart the add-on, it reinitializes the module.
 > After each reboot of the container with hass.io, this add-on will start automatically.
 
-### 💵 Support me:
-You can thank me for developing this project, provide financial support for the development of new projects and buy me a small cup of coffee.☕ \
-  Just support me on these platforms:    \
-  ⭐[**Boosty**⭐](https://boosty.to/anodev)   \
-  ⭐[**DonationAlerts**⭐](https://www.donationalerts.com/r/anodev_development)
-
 ## 🧷 Urls
 [Add-on link](https://github.com/OPHoperHPO/hassio-addons/tree/master/pulseaudio_fix)
 
@@ -34,7 +34,7 @@ You can thank me for developing this project, provide financial support for the 
 Developed by [Anodev](https://github.com/OPHoperHPO)
 
 ## 🎓 License
-[Apache License 2.0](https://github.com/OPHoperHPO/hassio-addons/blob/master/pulseaudio_fix/LICENSE)
+   [Apache License 2.0](https://github.com/OPHoperHPO/hassio-addons/blob/master/pulseaudio_fix/LICENSE.md)
    Copyright 2020 Anodev (OPHoperHPO)
 
    Licensed under the Apache License, Version 2.0 (the "License");
