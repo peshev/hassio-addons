@@ -1,10 +1,14 @@
-import os
 import subprocess
 
+def get_config():
+    process = subprocess.Popen(['bashio::config'], stdout=subprocess.PIPE)
+    stdout = process.communicate()[0]
+    return dict(stdout)
 
 def main():
-    print(os.environ)
-    subprocess.call(["load-module", "module-suspend-on-idle"], executable="/usr/bin/pactl")
+    config = get_config()
+    print(config)
+    subprocess.call(["pactl", "load-module", "module-suspend-on-idle"])
 
 
 if __name__ == '__main__':
