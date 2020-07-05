@@ -10,12 +10,16 @@ RUN \
     apk add --no-cache \
         alsa-plugins-pulse \
         alsa-utils \
-        pulseaudio-utils
+        pulseaudio-utils \
+        python3
 
 # Build arguments
 ARG BUILD_DATE
 ARG BUILD_REF
 ARG BUILD_VERSION
+
+# Copy files
+COPY main.py /
 
 # Labels
 LABEL \
@@ -35,4 +39,4 @@ LABEL \
     org.label-schema.vcs-url="https://github.com/OPHoperHPO/hassio-addons/tree/master/pulseaudio_fix" \
     org.label-schema.vendor="Anodev <https://github.com/OPHoperHPO>"
 
-CMD [ "pactl", "load-module", "module-suspend-on-idle" ]
+CMD [ "python3", "/main.py" ]

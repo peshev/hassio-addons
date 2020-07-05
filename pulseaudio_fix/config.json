@@ -1,6 +1,6 @@
 {
   "name": "Alsa & PulseAudio Fix",
-  "version": "3.2",
+  "version": "3.4",
   "slug": "pulseaudio_fix",
   "url": "https://github.com/OPHoperHPO/hassio-addons/tree/master/pulseaudio_fix",
   "description": "This add-on eliminates the problem of 'Device or resource busy' on computers with an external ALSA and PULSEAUDIO caused by the docker container 'hassio_audio'",
