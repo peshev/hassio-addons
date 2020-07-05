@@ -30,14 +30,14 @@ def main():
     if is_loaded():
         err = unload_module()
         if len(err) > 0:
-            raise Exception("Error unloading module `module-suspend-on-idle`!"
+            raise Exception("[ALSA&PULSEAUDIO FIX][ERROR] Error unloading module `module-suspend-on-idle`!"
                             "Output pactl: {}".format(err))
     err = load_module()
     if len(err) > 0:
-        Exception("Error loading module `module-suspend-on-idle`!"
+        Exception("[ALSA&PULSEAUDIO FIX][ERROR] Error loading module `module-suspend-on-idle`!"
                   "Output pactl: {}".format(err))
     else:
-        print("Module `module-suspend-on-idle` loaded successfully!")
+        print("[ALSA&PULSEAUDIO FIX][INFO] Module `module-suspend-on-idle` loaded successfully!")
 
 
 if __name__ == '__main__':
