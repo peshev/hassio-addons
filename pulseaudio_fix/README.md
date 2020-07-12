@@ -3,11 +3,12 @@
 ## 📄 Description
 This add-on eliminates the [problem](https://github.com/home-assistant/audio/issues/12) of ``Device or resource busy`` on computers with an **external ALSA and PULSEAUDIO** caused by the docker container ```hassio_audio```.
 
-## 💵 Support me:
-You can thank me for developing this project, provide financial support for the development of new projects and buy me a small cup of coffee.☕ \
-  Just support me on these platforms:    \
-  ⭐[**Boosty**⭐](https://boosty.to/anodev)   \
-  ⭐[**DonationAlerts**⭐](https://www.donationalerts.com/r/anodev_development)
+## 💵 Support me:  
+  You can thank me for developing any of my projects, provide financial support for developing new projects and buy me a small cup of coffee.☕ \
+  Just support me on these platforms:
+  * ![](https://github.com/OPHoperHPO/OPHoperHPO/raw/master/assets/imgs/boosty_logo.jpeg) [**Boosty**](https://boosty.to/anodev)
+  * ![](https://github.com/OPHoperHPO/OPHoperHPO/raw/master/assets/imgs/donationalerts_logo.png) [**DonationAlerts**](https://www.donationalerts.com/r/anodev_development)
+  * ![](https://github.com/OPHoperHPO/OPHoperHPO/raw/master/assets/imgs/paypal_logo.jpg) [**PayPal**](https://paypal.me/anodev)
 
 ## 🔍 Warning!
 This is a **very dirty temporary hack**, but it **works**.
