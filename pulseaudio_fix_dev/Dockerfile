@@ -7,8 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 ARG BUILD_ARCH=amd64
 RUN \
-    set -x \
-    && apk add --no-cache \
+    apk add --no-cache \
         alsa-plugins-pulse \
         alsa-utils \
         pulseaudio-utils \

@@ -9,7 +9,6 @@
   "boot": "auto",
   "audio": true,
   "stage": "experimental",
-  "ingress": true,
   "options": {},
   "schema": {}
 }
