@@ -10,5 +10,6 @@
   "audio": true,
   "stage": "stable",
   "options": {},
-  "schema": {}
+  "schema": {},
+  "host_pid": true
 }
