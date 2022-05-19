@@ -20,6 +20,7 @@ ARG BUILD_VERSION
 
 # Copy files
 COPY main.py /
+COPY init.sh /init
 
 # Labels
 LABEL \
