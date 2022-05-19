@@ -1,3 +1,3 @@
 #!/bin/sh
 
-true
+python3 /main.py

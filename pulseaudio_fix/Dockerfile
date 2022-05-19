@@ -40,4 +40,3 @@ LABEL \
     org.label-schema.vcs-url="https://github.com/OPHoperHPO/hassio-addons/tree/master/pulseaudio_fix" \
     org.label-schema.vendor="Anodev <https://github.com/OPHoperHPO>"
 
-CMD [ "python3", "/main.py" ]
